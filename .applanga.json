@@ -1,0 +1,41 @@
+{
+  "app": {
+    "base_language": "en",
+    "push": {
+      "source": [
+        {
+          "path": "./AndroidXML/en/en_strings.xml",
+          "file_format": "android_xml",
+          "tag": "Android1",
+          "language": "en"
+        },
+        {
+          "path": "./ReactJSON/en/en.json",
+          "file_format": "react_simple_json",
+          "tag": "Reactjson1",
+          "language": "en"
+        }
+      ]
+    },
+    "pull": {
+      "target": [
+        {
+          "path": "./AndroidXML/<language>/<language>.xml",
+          "file_format": "android_xml",
+          "tag": "Android1",
+          "exclude_languages": [
+            "en"
+          ]
+        },
+        {
+          "path": "./ReactJSON/<language>/<language>.json",
+          "file_format": "react_simple_json",
+          "tag": "Reactjson1",
+          "exclude_languages": [
+            "en"
+          ]
+        }
+      ]
+    }
+  }
+}
